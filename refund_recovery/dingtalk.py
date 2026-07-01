@@ -92,7 +92,24 @@ class DingTalkClient:
                 "--sheet-id",
                 sheet_id,
                 "--values",
-                json.dumps(rows, ensure_ascii=False),
+                json.dumps(rows, ensure_ascii=True),
+            ]
+        )
+
+    def update_range(self, node: str, sheet_id: str, range_a1: str, values: list[list[Any]]) -> None:
+        self._run(
+            [
+                "sheet",
+                "range",
+                "update",
+                "--node",
+                node,
+                "--sheet-id",
+                sheet_id,
+                "--range",
+                range_a1,
+                "--values",
+                json.dumps(values, ensure_ascii=True),
             ]
         )
 
