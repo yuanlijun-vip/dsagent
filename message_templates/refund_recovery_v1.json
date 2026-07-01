@@ -1,0 +1,18 @@
+{
+  "template_id": "unshipped_refund_recovery_v1",
+  "name": "未发货仅退款客户挽回话术 v1",
+  "enabled": true,
+  "send_mode": "combined_text_then_image",
+  "sequence": [
+    {
+      "type": "text",
+      "content": "亲亲，关注到您下单电脑椅后退款了，想必是对产品 / 售后还有顾虑吧？\n电脑椅作为高频使用家具，质保、服务和价格保障是核心；我特意为您争取到三重保障福利，重新下单就能锁定这份专属保障，有任何疑问我随时解答，放心入手～"
+    },
+    {
+      "type": "image",
+      "path": "assets/refund_recovery/quality保障_三重保障.png",
+      "source_path": "C:/Users/Admin/Desktop/微信图片_20260701091559_4_2.png"
+    }
+  ],
+  "notes": "发送时消息在前、图片在后；可以作为一条组合触达发送。"
+}

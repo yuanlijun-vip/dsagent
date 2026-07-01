@@ -1,0 +1,31 @@
+{
+  "shop_list_node": "https://alidocs.dingtalk.com/i/nodes/R1zknDm0WRE6rOxnc07jgO798BQEx5rG",
+  "shop_list_sheet": "s1",
+  "shop_enabled_column": "是否运行",
+  "shop_name_column": "店铺名称",
+  "export_dir": "exports",
+  "state_file": ".runtime/monthly_reports.json",
+  "runtime": {
+    "start_time": "08:00",
+    "end_time": "23:30",
+    "retry_count": 3,
+    "send_messages": false
+  },
+  "message_template": {
+    "path": "message_templates/refund_recovery_v1.json"
+  },
+  "monthly_report": {
+    "name_template": "未发货仅退款客户挽回跟进-{yyyy}-{mm}",
+    "folder": null,
+    "existing_node": null,
+    "sheet_name": "跟进明细"
+  },
+  "columns": {
+    "order_id": ["订单号", "主订单编号", "子订单编号"],
+    "buyer_id": ["旺旺ID", "买家旺旺", "买家昵称"],
+    "refund_time": ["退款申请时间", "申请时间", "售后申请时间"],
+    "order_status": ["订单状态", "交易状态"],
+    "today_chatted": ["今日是否已对话", "是否今日已对话"],
+    "has_unfinished_order": ["是否未完结订单", "存在未完结订单"]
+  }
+}
